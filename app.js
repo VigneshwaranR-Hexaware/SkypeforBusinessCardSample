@@ -35,15 +35,14 @@ bot.dialog('/', intents);
                   }
                 ]);//Welcome Intent Fired
 
-    intents.matches('SatisfactoryIntent', [
+    intents.matches('health-addons', [
                   function (session, args) {
                      console.log("Satisfactory Intent Fired");
                      console.log("Args : "+JSON.stringify(args));
-                      var responseString="You're welcome."
+                      var responseString="Sure Mike. Based on your job profile, team and dependent information"
                       session.send(responseString);
                 }
-              ]);//Satisfactory Intent Fired
-
+              ]);
                intents.onDefault(function(session){
                    session.send("Sorry...can you please rephrase?");
                });
