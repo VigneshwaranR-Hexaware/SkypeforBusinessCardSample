@@ -158,7 +158,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
     var msg = new builder.Message(session)
         .addAttachment(card);
     session.send('<img src="http://www.atpworldtour.com/en/news/www.atpworldtour.com/-/media/images/news/2017/03/25/21/21/miami-2017-saturday-federer.jpg" alt="Mountain View" style="width:304px;height:228px;">');
-    session.send('<b>Welcome to Skype</b>')
+    session.send('<b>Welcome to Skype<a href="www.google.com">click here to go google</a></b>')
 });
 
 // Search Hotels
