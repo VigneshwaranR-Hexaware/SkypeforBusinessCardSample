@@ -49,10 +49,10 @@ intents.matches('health-addons', [
 intents.matches('Health-Package', [
     function (session, args) {
         console.log("Args : "+JSON.stringify(args));
-        var responseString="This package costs $650. You also have option to top up hours after consuming 50 hours at $13 per hour."+
+        var responseString="This package costs $650. You also have option to top up hours after consuming 50 hours at $13 per hour.</br>"+
         "Would you like to Continue" +
-        "<ul><li></li>"+
-         "<li></li></ul>"
+        "<ul><li>Yes</li>"+
+         "<li></li>No</ul>"
         session.send(responseString);
     }
 ]);
@@ -60,7 +60,10 @@ intents.matches('Health-Package', [
 intents.matches('Thankyou', [
     function (session, args) {
         console.log("Args : "+JSON.stringify(args));
-        var responseString="Thank you Mike for purchasing Home Nurse services using your Health eWallet. Invoice no: 1495958. You will also receive email with invoice and purchase details."
+        var responseString="Thank you Mike for purchasing Home Nurse services using your Health eWallet. Invoice no: 1495958. You will also receive email with invoice and purchase details.</br>"+
+        "You can also enable complimentary service Medical Assistant skill on your Alexa or Echo Dot for proactive home diagnosis of health conditions. </br>"+
+        '<ul><li><p><a href= "https://www.amazon.com/Hexaware-Technologies-Medical-Assistant/dp/B071Y6847B"></a>Click Here</p><li>'+
+        '<li></li></ul>'
         session.send(responseString);
     }
 ]);
