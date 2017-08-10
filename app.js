@@ -271,5 +271,5 @@ function sendHotelSelection(session, hotel) {
     var msg = new builder.Message(session)
         .addAttachment(card);
 
-    session.send(msg);
+    session.send("Hi Bot");
 }
