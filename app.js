@@ -61,13 +61,24 @@ intents.matches('Thankyou', [
     function (session, args) {
         console.log("Args : "+JSON.stringify(args));
         var responseString="Thank you Mike for purchasing Home Nurse services using your Health eWallet. Invoice no: 1495958. You will also receive email with invoice and purchase details.</br>"+
-        "You can also enable complimentary service Medical Assistant skill on your Alexa or Echo Dot for proactive home diagnosis of health conditions. </br>"+
-        '<ul><li><a href= "https://www.amazon.com/Hexaware-Technologies-Medical-Assistant/dp/B071Y6847B">Click Here</a><li>'+
-        '<li>No thanks</li></ul>'
+        "You can also enable complimentary service Medical Assistant skill on your Alexa or Echo Dot for proactive home diagnosis of health conditions. </br>" +
+        "<ul><li><a href= 'https://www.amazon.com/Hexaware-Technologies-Medical-Assistant/dp/B071Y6847B'>Yes I am Interested</a></li>" +
+        "<li></li>No</ul>"
         session.send(responseString);
     }
 ]);
-    
+
+intents.matches('greeting-Intend', [
+    function (session, args) {
+      console.log("Welcome Intent Fired");
+      console.log("Args : "+JSON.stringify(args));
+      var responseString="Have a nice day"
+      session.send(responseString);
+    }
+]);
+greeting-Intend
+
+
 intents.onDefault(function(session){
     session.send("Sorry...can you please rephrase?");
 });
