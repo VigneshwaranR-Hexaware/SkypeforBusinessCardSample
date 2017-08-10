@@ -37,9 +37,15 @@ bot.dialog('/', intents);
 
     intents.matches('health-addons', [
                   function (session, args) {
-                     console.log("Satisfactory Intent Fired");
                      console.log("Args : "+JSON.stringify(args));
                       var responseString="Sure Mike. Based on your job profile, team and dependent information"
+                      session.send(responseString);
+                }
+              ]);
+    intents.matches('Health-Package', [
+                  function (session, args) {
+                     console.log("Args : "+JSON.stringify(args));
+                      var responseString="This package costs $650. You also have option to top up hours after consuming 50 hours at $13 per hour."
                       session.send(responseString);
                 }
               ]);
