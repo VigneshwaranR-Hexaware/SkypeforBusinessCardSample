@@ -76,8 +76,6 @@ intents.matches('greeting-Intend', [
       session.send(responseString);
     }
 ]);
-greeting-Intend
-
 
 intents.onDefault(function(session){
     session.send("Sorry...can you please rephrase?");
