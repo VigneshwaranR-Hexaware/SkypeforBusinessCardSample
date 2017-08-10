@@ -62,7 +62,7 @@ intents.matches('Thankyou', [
         console.log("Args : "+JSON.stringify(args));
         var responseString="Thank you Mike for purchasing Home Nurse services using your Health eWallet. Invoice no: 1495958. You will also receive email with invoice and purchase details.</br>"+
         "You can also enable complimentary service Medical Assistant skill on your Alexa or Echo Dot for proactive home diagnosis of health conditions. </br>"+
-        '<ul><li><p><a href= "https://www.amazon.com/Hexaware-Technologies-Medical-Assistant/dp/B071Y6847B"></a>Click Here</p><li>'+
+        '<ul><li><a href= "https://www.amazon.com/Hexaware-Technologies-Medical-Assistant/dp/B071Y6847B">Click Here</a><li>'+
         '<li></li></ul>'
         session.send(responseString);
     }
