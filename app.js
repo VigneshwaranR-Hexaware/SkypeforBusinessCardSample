@@ -17,7 +17,7 @@ var connector = new builder.ChatConnector({
     appPassword: 'TcEyatE9XE4Po8Y8n2bVUAG'
 });
 
-server.post('/', connector.listen());
+server.post('/api/messages', connector.listen());
 //POST Call Handler
 var bot = new builder.UniversalBot(connector);
 var recognizer = new apiairecognizer('60f482a6ba0c40139a174c7a022c37c3');
