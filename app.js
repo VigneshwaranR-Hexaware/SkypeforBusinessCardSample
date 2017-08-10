@@ -36,7 +36,7 @@ bot.dialog('/', intents);
     intents.matches('health-addons', [
                   function (session, args) {
                      console.log("Args : "+JSON.stringify(args));
-                      var responseString="Sure Mike. Based on your job profile, team and dependent information"
+                      var responseString="Sure Mike. Based on your job profile, team and dependent information</br>HexaHealth recommends the following h-commerce plans for you"
                       session.send(responseString);
                 }
               ]);
