@@ -157,7 +157,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
     var msg = new builder.Message(session)
         .addAttachment(card);
-    session.send(msg);
+    session.send("msg");
 });
 
 // Search Hotels
