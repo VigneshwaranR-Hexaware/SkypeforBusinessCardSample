@@ -41,8 +41,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 // Create connector and listen for messages
 var connector = new builder.ChatConnector({
-   appId: "72308ad8-d853-4775-8019-d2fee6686eb2",
-   appPassword: "bS5r46iC0kzmmnP4cm51BTv"
+    appId: 'b960eb1d-6936-46d7-8a74-f35a8a6d5f6a',
+    appPassword: 'TcEyatE9XE4Po8Y8n2bVUAG'
 });
 
 
@@ -52,7 +52,7 @@ server.post('/', connector.listen());
 
 
 var bot = new builder.UniversalBot(connector);
-var recognizer = new apiairecognizer('2ce0da1c25354c2bb16ef5cb0f61e43f');
+var recognizer = new apiairecognizer('60f482a6ba0c40139a174c7a022c37c3');
 bot.recognizer(recognizer);
 //Create Bot Object
 
