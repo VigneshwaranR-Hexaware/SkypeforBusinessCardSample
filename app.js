@@ -39,7 +39,10 @@ intents.matches('health-addons', [
         console.log("Args : "+JSON.stringify(args));
         var responseString="Sure Mike. Based on your job profile, team and dependent information</br>"+
         "HexaHealth recommends the following h-commerce plans for you"
-        session.send(responseString);
+        var healthPackage="<ul><li>Emergency Back Up Home Nurse Care for dependents 50 hrs 24x7 home care at $650</li>"+
+        "<li>Intelligent Home Monitoring system for elderly Monthly rental plan $350</li><ul>"
+        var msg=responseString + healthPackage;
+        session.send(msg);
     }
 ]);
 
