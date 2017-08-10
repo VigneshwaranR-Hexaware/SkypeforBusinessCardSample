@@ -30,7 +30,7 @@ bot.dialog('/', intents);
                     function (session, args) {
                        console.log("Welcome Intent Fired");
                        console.log("Args : "+JSON.stringify(args));
-                        var responseString="Hi there. I am Citi Assistant. How can I help you?"
+                        var responseString="Hi Mike!How may i assit you today "
                         session.send(responseString);
                   }
                 ]);//Welcome Intent Fired
