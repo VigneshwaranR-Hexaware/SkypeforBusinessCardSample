@@ -36,11 +36,12 @@ intents.matches('DefaultWelcomeIntent', [
 
 intents.matches('health-addons', [
     function (session, args) {
+        console.log("health-addons Intend triggered")
         console.log("Args : "+JSON.stringify(args));
         var responseString="Sure Mike. Based on your job profile, team and dependent information</br>"+
         "HexaHealth recommends the following h-commerce plans for you"
-        var healthPackage="<ul><li>Emergency Back Up Home Nurse Care for dependents 50 hrs 24x7 home care at $650</li>"+
-        "<li>Intelligent Home Monitoring system for elderly Monthly rental plan $350</li><ul>"
+        var healthPackage="1.Emergency Back Up Home Nurse Care for dependents 50 hrs 24x7 home care at $650"+
+        "2.Intelligent Home Monitoring system for elderly Monthly rental plan $350"
         var msg=responseString + healthPackage;
         session.send(msg);
     }
