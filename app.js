@@ -32,6 +32,6 @@ intents.matches('DefaultWelcomeIntent', [
                         session.send(responseString);
                   }
                 ]);//Welcome Intent Fired
-}
+
 
 
