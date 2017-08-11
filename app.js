@@ -73,7 +73,7 @@ intents.matches('greeting-Intend', [
     function (session, args) {
       console.log("Welcome Intent Fired");
       console.log("Args : "+JSON.stringify(args));
-      var responseString="Have a nice day"
+      var responseString="Have a nice day!!"
       session.send(responseString);
     }
 ]);
