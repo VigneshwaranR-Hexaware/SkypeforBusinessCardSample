@@ -50,6 +50,7 @@ intents.matches('health-addons', [
 intents.matches('Health-Package', [
     function (session, args) {
         console.log("Args : "+JSON.stringify(args));
+        console.log("Args : "+JSON.stringify(session));
         var responseString="This package costs $650. You also have option to top up hours after consuming 50 hours at $13 per hour.</br>"+
         "Would you like to Continue" +
         "<ul><li>Yes</li>"+
