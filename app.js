@@ -38,10 +38,10 @@ intents.matches('health-addons', [
     function (session, args) {
         console.log("health-addons Intend triggered")
         console.log("Args : "+JSON.stringify(args));
-        var responseString="Sure Mike. Based on your job profile, team and dependent information"+
-        " HexaHealth recommends the following h-commerce plans for you" + 
-        var healthPackage="1.Emergency Back Up Home Nurse Care for dependents 50 hrs 24x7 home care at $650" + 
-        " 2.Intelligent Home Monitoring system for elderly Monthly rental plan $350"
+        var responseString="Sure Mike. Based on your job profile, team and dependent information"+"<br>"
+        "HexaHealth recommends the following h-commerce plans for you" + "<br>"
+        var healthPackage="1.Emergency Back Up Home Nurse Care for dependents 50 hrs 24x7 home care at $650"+
+                          "2.Intelligent Home Monitoring system for elderly Monthly rental plan $350"
         var msg=responseString + healthPackage;
         session.send(msg);
     }
@@ -51,7 +51,7 @@ intents.matches('Health-Package', [
     function (session, args) {
         console.log("Args : "+JSON.stringify(args));
         var responseString="This package costs $650. You also have option to top up hours after consuming 50 hours at $13 per hour.</br>"+
-        "Would you like to Continue" +
+        "Would you like to Continue" 
         "<ul><li>Yes</li>"+
          "<li></li>No</ul>"
         session.send(responseString);
