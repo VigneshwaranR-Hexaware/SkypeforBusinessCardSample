@@ -52,8 +52,10 @@ intents.matches('Health-Package', [
         console.log("Args : "+JSON.stringify(args));
         var responseString="This package costs $650. You also have option to top up hours after consuming 50 hours at $13 per hour."+
         "Would you like to Continue" +
-        "<ul><li>Yes</li>"+
-        "<li></li>No</ul>"
+        //"<ul><li>Yes</li>"+
+        //"<li></li>No</ul>"
+            "Yes"+
+            "No"
         session.send(responseString);
     }
 ]);
