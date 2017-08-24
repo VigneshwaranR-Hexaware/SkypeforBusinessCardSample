@@ -54,7 +54,7 @@ intents.matches('Health-Package', [
         "Would you like to Continue" +""+
         //"<ul><li>Yes</li>"+
         //"<li></li>No</ul>"
-            "Yes"+"/"
+            "Yes"+" / " +
             "No"
         session.send(responseString);
     }
